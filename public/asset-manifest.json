@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c4898be.css",
-    "main.js": "/static/js/main.af9db592.js",
-    "static/media/logoEC.webp": "/static/media/logoEC.8d1aafe4e0f977414f2e.webp",
-    "static/media/logoCarrito.png": "/static/media/logoCarrito.725ddec0dab8ba8858f1.png",
+    "main.css": "/static/css/main.d5335384.css",
+    "main.js": "/static/js/main.d19b4d9a.js",
+    "static/media/FondoCarrito.jpg": "/static/media/FondoCarrito.d940f8c9faa578d12930.jpg",
+    "static/media/FondoAlta.jpg": "/static/media/FondoAlta.a1f802470c58892295b3.jpg",
+    "static/media/FondoNosotros.png": "/static/media/FondoNosotros.5a03a7c201e349e4bd64.png",
+    "static/media/FondoInicio.jpg": "/static/media/FondoInicio.7952817f8a9d16a75275.jpg",
+    "static/media/FondoFooter.jpg": "/static/media/FondoFooter.99ec5c2c987b9d2e19e1.jpg",
+    "static/media/Logo.png": "/static/media/Logo.95fef19db30a8f9e81d6.png",
+    "static/media/Search_find_icon.png": "/static/media/Search_find_icon.3f93048da877d8685d11.png",
     "index.html": "/index.html",
-    "main.6c4898be.css.map": "/static/css/main.6c4898be.css.map",
-    "main.af9db592.js.map": "/static/js/main.af9db592.js.map"
+    "main.d5335384.css.map": "/static/css/main.d5335384.css.map",
+    "main.d19b4d9a.js.map": "/static/js/main.d19b4d9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c4898be.css",
-    "static/js/main.af9db592.js"
+    "static/css/main.d5335384.css",
+    "static/js/main.d19b4d9a.js"
   ]
 }
