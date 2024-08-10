@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5335384.css",
-    "main.js": "/static/js/main.d19b4d9a.js",
+    "main.css": "/static/css/main.3e6c302b.css",
+    "main.js": "/static/js/main.5073936e.js",
     "static/media/FondoCarrito.jpg": "/static/media/FondoCarrito.d940f8c9faa578d12930.jpg",
     "static/media/FondoAlta.jpg": "/static/media/FondoAlta.a1f802470c58892295b3.jpg",
     "static/media/FondoNosotros.png": "/static/media/FondoNosotros.5a03a7c201e349e4bd64.png",
     "static/media/FondoInicio.jpg": "/static/media/FondoInicio.7952817f8a9d16a75275.jpg",
+    "static/media/FondoChat.jpg": "/static/media/FondoChat.67c687ab8eed28bd6185.jpg",
+    "static/media/richard-horvath-is8jWT-mvng-unsplash.jpg": "/static/media/richard-horvath-is8jWT-mvng-unsplash.a8092a786488037d0638.jpg",
     "static/media/FondoFooter.jpg": "/static/media/FondoFooter.99ec5c2c987b9d2e19e1.jpg",
     "static/media/Logo.png": "/static/media/Logo.95fef19db30a8f9e81d6.png",
     "static/media/Search_find_icon.png": "/static/media/Search_find_icon.3f93048da877d8685d11.png",
     "index.html": "/index.html",
-    "main.d5335384.css.map": "/static/css/main.d5335384.css.map",
-    "main.d19b4d9a.js.map": "/static/js/main.d19b4d9a.js.map"
+    "main.3e6c302b.css.map": "/static/css/main.3e6c302b.css.map",
+    "main.5073936e.js.map": "/static/js/main.5073936e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5335384.css",
-    "static/js/main.d19b4d9a.js"
+    "static/css/main.3e6c302b.css",
+    "static/js/main.5073936e.js"
   ]
 }

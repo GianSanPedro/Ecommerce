@@ -39,6 +39,22 @@ class Servicio {
         }
     }
 
+    loginVisitante = async () => {
+        const usuario = {
+            nombre: "Visitante",
+            email: "Visitante@Visitante",
+            admin: false
+        };
+            
+        const payload = {
+            usuario
+        }
+        const token = jwt.sign(payload, config.LLAVE, { expiresIn: 1200 } )
+        console.log('VISITANTE TOKEN', token)
+
+        return { status: 'loginOk', usuario, token }
+    }
+
     registerUsuario = async credenciales => {
         //console.log(credenciales)
         const usuarioRegistrado = await this.model.guardarUsuario(credenciales)
@@ -64,6 +80,7 @@ class Servicio {
         }        
         return rta
     }
+
 }
 
 export default Servicio

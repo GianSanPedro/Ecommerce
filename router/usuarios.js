@@ -9,6 +9,7 @@ class Router {
 
     config() {
         this.router.post('/login', this.controlador.loginUsuario )
+        this.router.post('/loginVisitante', this.controlador.loginVisitante )
         this.router.post('/register', this.controlador.registerUsuario )
         this.router.post('/token', this.controlador.validarToken )
 

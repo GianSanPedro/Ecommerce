@@ -1,4 +1,5 @@
 import Servicio from '../servicio/usuarios.js'
+import jwt from 'jsonwebtoken';
 
 class Controlador {
 
@@ -11,6 +12,17 @@ class Controlador {
             const credenciales = req.body
             const usuarioLogueado = await this.servicio.loginUsuario(credenciales)
             res.json(usuarioLogueado)
+        }
+        catch(error) {
+            res.status(500).json({errMsg: error.message})
+        }
+    }
+
+    loginVisitante = async (req, res) => {
+        try {
+            const VisitanteLogueado = await this.servicio.loginVisitante()
+            res.json(VisitanteLogueado)
+            console.log(VisitanteLogueado)
         }
         catch(error) {
             res.status(500).json({errMsg: error.message})
@@ -40,6 +52,19 @@ class Controlador {
             res.status(500).json({errMsg: error.message})
         }
     }
+
+    
+    tokenVisitante = async (req, res) => {
+        try {
+            const datos = req.body
+            const rta = await this.servicio.validarToken(datos)
+            res.json(rta)
+        }
+        catch(error) {
+            res.status(500).json({errMsg: error.message})
+        }
+    }
+
 }
 
 export default Controlador

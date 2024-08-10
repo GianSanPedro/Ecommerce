@@ -11,7 +11,7 @@ const validar = producto => {
         categoria: Joi.string().required(),
         detalles: Joi.string().required(),
         foto: Joi.string().required(),
-        envio: Joi.boolean().required()
+        envio: Joi.boolean().required(),
     })
 
     const { error } = productoSchema.validate(producto);
