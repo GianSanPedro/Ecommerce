@@ -2,6 +2,11 @@ import ModelFactory from '../model/DAO/usuarios/usuariosFactory.js'
 import config from '../config.js'
 import jwt from 'jsonwebtoken'
 
+// https://www.npmjs.com/package/jsonwebtoken
+// npm i jsonwebtoken
+// https://jwt.io/
+// https://www.jstoolset.com/jwt
+
 class Servicio {
 
     constructor() {
@@ -12,19 +17,12 @@ class Servicio {
         //console.log(credenciales)
         const usuarios = await this.model.obtenerUsuarios()
         //console.log(usuarios)
-
         const usuarioLogueadoOK = usuarios.filter(u => u.email === credenciales.email && u.password === credenciales.password)
         //console.log(usuarioLogueadoOK)
 
         if(usuarioLogueadoOK.length === 1) {
             const { nombre, email, admin } = usuarioLogueadoOK[0]
             const usuario = { nombre, email, admin } 
-
-            // https://www.npmjs.com/package/jsonwebtoken
-            // npm i jsonwebtoken
-            // https://jwt.io/
-            // https://www.jstoolset.com/jwt
-            
 
             const payload = {
                 usuario
@@ -49,7 +47,7 @@ class Servicio {
         const payload = {
             usuario
         }
-        const token = jwt.sign(payload, config.LLAVE, { expiresIn: 1200 } )
+        const token = jwt.sign(payload, config.LLAVE, { expiresIn: 12000 } )
         console.log('VISITANTE TOKEN', token)
 
         return { status: 'loginOk', usuario, token }

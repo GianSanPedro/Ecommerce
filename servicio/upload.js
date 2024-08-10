@@ -10,7 +10,6 @@ class Servicio {
 
     subirArchivoFTP = async file => {
         //console.log(file)
-        
         const client = new Client()
         client.ftp.verbose = false
 
@@ -25,8 +24,8 @@ class Servicio {
 
             const src = file.path            
             const dst = `${config.FTP_DST}/${file.filename}`            
-            
             console.log('Subiendo archivo por FTP...')
+
             //progreso de la subida de la foto al servidor de archivos por FTP
             const bytesTotal = file.size
             client.trackProgress( info => {

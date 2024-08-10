@@ -10,6 +10,7 @@ const validar = producto => {
         marca: Joi.string().required(),
         categoria: Joi.string().required(),
         detalles: Joi.string().required(),
+        descripcion: Joi.string().max(500),
         foto: Joi.string().required(),
         envio: Joi.boolean().required(),
     })

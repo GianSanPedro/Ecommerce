@@ -7,6 +7,7 @@ const productoSchema = mongoose.Schema({
     marca: String,
     categoria: String,
     detalles: String,
+    descripcion: String,
     foto: String,
     envio: Boolean,
 }, { versionKey: false })

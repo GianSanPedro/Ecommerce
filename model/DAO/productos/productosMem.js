@@ -2,7 +2,102 @@ class ModelMem {
 
     constructor() {
         this.productos = [
-            
+            {
+                "nombre": "Monitor Odyssey G3",
+                "precio": 799000,
+                "stock": "40",
+                "marca": "Samsung",
+                "categoria": "Monitores y TV",
+                "detalles": "27\" FHD 144hz",
+                "descripcion": "Un monitor a tu medida\nCon tu pantalla LED no solo ahorrás energía, ya que su consumo es bajo, sino que vas a ver colores nítidos y definidos en tus películas o series favoritas.\n\nUna experiencia visual de calidad\nEste monitor de 24\" te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. ",
+                "foto": "../IMG/Productos/Monitor gamer Samsung Odyssey G3 S32AG32 LCD.png",
+                "envio": false,
+                "id": "66b75bf21ac24198d52fc984"
+              },
+              {
+                "nombre": "Monitor Odyssey G5",
+                "precio": 629000,
+                "stock": 34,
+                "marca": "Samsung",
+                "categoria": "Monitores y TV",
+                "detalles": " 27\" QHD 165hz 1000R",
+                "descripcion": "Tu mundo de juegos, ahora asombrosamente realista. Con 1,7 veces la densidad de píxeles de Full HD, la resolución QHD ofrece imágenes increíblemente detalladas y nítidas. Experimentá una vista más completa con más espacio para disfrutar de toda la acción.",
+                "foto": "../IMG/Productos/Monitor Gaming Samsung Ls27ag550 Odyssey G5 Curvo.png",
+                "envio": true,
+                "id": "66b75c631ac24198d52fc985"
+              },
+              {
+                "nombre": "NoteBook Galaxy Book3",
+                "precio": 1869999,
+                "stock": 70,
+                "marca": "Samsung",
+                "categoria": "NoteBook",
+                "detalles": "15.6\" INT i7 16 GB 512 GB",
+                "descripcion": "     Aprovechá al máximo tu día con el último procesador 13th Gen Intel® Core™, que ofrece un rendimiento rápido y confiable para una alta productividad y múltiples tareas.\n     Delgada para entrar en tu mochila y con un cuerpo de aluminio compacto que pesa menos de 1,6 kg, que te permite llevarla a donde quieras. Disponible en color Silver.",
+                "foto": "../IMG/Productos/Galaxy Book3 NP750XFG-KB2A.png",
+                "envio": false,
+                "id": "66b2494bbd300b6ccfbc4697"
+              },
+              {
+                "nombre": "Notebook Hp Ryzen",
+                "precio": 878999,
+                "stock": 93,
+                "marca": "HP",
+                "categoria": "NoteBook",
+                "detalles": "15.6 Ryzen 5 8gb Ram 512gb Ssd",
+                "descripcion": "La laptop HP ProBook 455 de 15 es un equipo duradero que ofrece herramientas de conectividad y colaboración integradas, seguridad de terminales en múltiples capas y rendimiento de grado comercial.",
+                "foto": "../IMG/Productos/Notebook Hp 14-em0013la Ryzen.png",
+                "envio": false,
+                "id": "66b24963bd300b6ccfbc4698"
+              },
+              {
+                "nombre": "Heladera BESPOKE",
+                "precio": 2449000,
+                "stock": 52,
+                "marca": "Samsung",
+                "categoria": "Electrodomestico",
+                "detalles": " BESPOKE RB33A307012 328LTS Clean Vainilla",
+                "descripcion": "Comenzá tu experiencia Bespoke diseñando una heladera única para vos. Podés usarla como un solo módulo, o ir agregando módulos adicionales a medida que los vayas necesitando. Todas las heladeras Bespoke cuentan con medidas similares, aptas para ser modularizadas, con o sin el uso del Kit de Emparejamiento (opcional).",
+                "foto": "../IMG/Productos/Heladera BESPOKE RB33A307018.png",
+                "envio": false,
+                "id": "66b24973bd300b6ccfbc4699"
+              },
+              {
+                "nombre": "Heladera Bespoke Side By Side",
+                "precio": 4000000,
+                "stock": 3,
+                "marca": "Samsung",
+                "categoria": "Electrodomestico",
+                "detalles": "Refrigeradora Bespoke Side By Side con Beverage Center 640L",
+                "descripcion": "Abrí la puerta de la heladera con menos esfuerzo. Con un ligero toque, Auto Open Door lo hace más simple y libera el burlete* cuando lo tocás. También emite un sonido para avisarte la apertura. Y su diseño sin manija, te brinda un aspecto perfectamente integrado y elegante.",
+                "foto": "../IMG/Productos/Heladera Bespoke Side By Side.png",
+                "envio": false,
+                "id": "66b24984bd300b6ccfbc469a"
+              },
+              {
+                "nombre": "Lavasecarropas 9,5kg con Ecobubble",
+                "precio": 1439000,
+                "stock": 95,
+                "marca": "Samsung",
+                "categoria": "Electrodomestico",
+                "detalles": "WW95AA046BXUBG 9.5 SILVER",
+                "descripcion": "Disfrutá de una eficiencia energética superior, menos ruido y un rendimiento duradero. La tecnología Digital Inverter utiliza imanes potentes para un rendimiento más silencioso* y potente, pero utiliza menos energía que un motor universal. También ofrece la mayor durabilidad** de la industria y 20 años de garantía.",
+                "foto": "../IMG/Productos/Lavasecarropas 9,5kg con Ecobubble.png",
+                "envio": false,
+                "id": "66b24998bd300b6ccfbc469b"
+              },
+              {
+                "nombre": "Lavarropas 7Kg Inverter con Ecobubble",
+                "precio": 989000,
+                "stock": 48,
+                "marca": "Samsung",
+                "categoria": "Electrodomestico",
+                "detalles": "Ecobubble Y Eficiencia energetica A+++ Silver",
+                "descripcion": "Logra que tu ropa quede impecable, incluso si está muy sucia. La función Bubble Soak ayuda a eliminar una gran variedad de manchas difíciles, como sangre, té, vino, maquillaje y pasto. La ropa se empapa a fondo en burbujas activas, por lo que la suciedad y las manchas se aflojan y pueden eliminarse con mayor efectividad*.",
+                "foto": "../IMG/Productos/Lavarropas 7Kg Inverter con Ecobubble.png",
+                "envio": false,
+                "id": "66b249abbd300b6ccfbc469c"
+              }
         ]
     }
 

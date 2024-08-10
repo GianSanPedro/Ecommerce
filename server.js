@@ -22,7 +22,8 @@ const io = new Server(http, {
     cors: { origin:"*" }
 })
 
-app.use(cors())         // Habilito CORS: peticiones al servidor desde orígenes cruzados
+// Habilito CORS: peticiones al servidor desde orígenes cruzados
+app.use(cors())         
 
 app.use(express.static('public'))
 
@@ -30,6 +31,7 @@ app.use(express.json())
 
 
 // ------------- Atención de comunicación WebSockets -------------
+
 /* io.on('connection', socket => {
     console.log('Cliente conectado!')
 }) */
@@ -37,15 +39,16 @@ app.use(express.json())
 io.on('connection', new RouterMensajes(io).config())
 
 // -------------- Rutas / endpoints API RESTFUL ------------------
+
 // rutas protegidas
 app.use('/api/productos', guarda, new RouterProductos().config())
 app.use('/api/pedidos', new RouterPedidos(guarda).config())
 app.use('/api/upload', guarda, new RouterUpload().config())
 
-// rutas de libre acceso
+// Rutas de libre acceso
 app.use('/api/usuarios', new RouterUsuarios().config())
 
-// --------------- Listen del Servidor ------------------
+// Listen del Servidor
 if(config.MODO_PERSISTENCIA == 'MONGODB') {
     await CnxMongoDB.conectar()
 }
