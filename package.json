@@ -10,7 +10,7 @@
     "dev": "nodemon server.js"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=16.20.1"
   },
   "keywords": [],
   "author": "Gianfranco San Pedro",
